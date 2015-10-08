@@ -1,0 +1,54 @@
+<div>
+    <!--To Do: make buttons fancier with dojo-->
+    <span>Select a map layer field to search:</span>
+
+    <div id="layerMenuNode">
+        <select id="selectLayerNode"></select>
+    </div>
+    <br />
+
+    <br />
+    <span>Select a field to search:</span>
+
+    <div id="fieldMenuNode">
+        <select id="selectFieldNode"></select>
+    </div>
+    <br />
+    <br />
+    <span>Select features with operator:</span>
+
+    <div id="operatorMathMenuNodeDiv">
+        <select id="selectOperatorMathMenuNode">
+            <option value="LIKE" title="Use LIKE for text search">LIKE</option>
+            <option value="=" title="Equal To">=</option>
+            <option value=">" title="Greater Than">></option>
+            <option value="<" title="Less Than"><</option>
+            <option value=">=" title="Greater Than or Equal To">>=</option>
+            <option value="<=" title="Less Than or Equal To"><=</option>
+
+        </select>
+        <button id="btnAndNode" type="button">AND</button> <button id="btnOrNode" type="button">OR</button> <button id="btnNotNode" type="button">NOT</button>
+        <!--note.. come back and get these buttons out of div, place vertically with css to be beside Operator selection menu-->
+    </div>
+    <br />
+    <br />
+
+
+
+    <span>Expression:</span>
+    <br />
+    <textarea id="myareaExpression"></textarea>
+
+    <br />
+    <br />
+    <button id="btnAddToQueryNode" type="button">&#x2193; Add to Query &#x2193;</button>
+    <br />
+    
+    <!--final query to execute-->
+    <textarea id="myarea"></textarea>
+
+    <br />
+    <br>
+    <button id="btnSearchNode" type="button">Search</button> &nbsp; &nbsp;  <button id="btnClearGfxNode" type="button">Clear Map</button> &nbsp; &nbsp; <button id="btnClearQueryBoxNode" type="button">Clear Query</button>
+
+</div>
