@@ -5,26 +5,41 @@ By: Kevin MacLeod - Savannah - Chatham Area GIS
 Version: Alpha 3 development build  10/14/15
 
 
-Setup: 
+**Setup: 
 Define the service and initial layer to query in WebApp Builder in the widget setup when you add the widget. 
 
-Use:
+**What this widget does:
 This widget allows you to build queries for any field, in any layer, for any service. 
 
-You use the buttons to create SQL queries that will be created as a URL and submitted to the map service you define with the REST link you provide in the widget setup. This widget essentially replicates the functionality and feel of ArcMap's 'Select By Attributes' tool.
+**How to use:
+	You use the buttons to create SQL queries that will be created as a URL and submitted to the map service (which you define with the REST link you provide in the widget setup). This widget essentially replicates the functionality and feel of ArcMap's 'Select By Attributes' tool.
+
+1. Assemble your query with the buttons.
+2. Click ?Add to Query? 
+3. If desired, create another query with the buttons and add it again. It will append to the first query.
+4. Click 'Search' to launch the query.
 
 You can manually enter SQL syntax or use the buttons to construct a query.  I recommend using the buttons so the spacing and syntax are correct.
 
-To Do for version 1.1:
 
-1. Ability to add and use multiple map services, configured via WebApp Dev widget configure UI.
 
-2. Add option to restrict results by geometry. By map extent for version 1.0 and in future versions, potentially by user-drawn geometry i.e. circle, square, lasso.
+-----------
+TO DO for version 1.0 - Final Build:
 
-3. Wrap user text in quotes for sql.
+1. write a better read me (TAPAS, you are good at these..I'm open to collaboration man!! ;) :D  )
 
-4. Refine UI. Allow user to insert text anywhere not just the end.  Add progress bar while it searches. 
+2. Ability to add and use multiple map services, configured via WebApp Dev widget configure UI.
 
-5. Test and debug. Ability to remove search result layers?
+3. Add option to restrict results by geometry. By map extent for version 1.0 and in future versions, potentially by user-drawn geometry i.e. circle, square, lasso.
 
-6. Help doc linked to in-panel? See Tom's Measure for example.
+4. Wrap user text in quotes for sql.
+
+5. Refine UI. Allow user to insert text anywhere not just the end.  Add progress bar while it searches. 
+
+6. Test and debug. Ability to remove search result layers?
+
+7. Help doc linked to in-panel? Like Tom's Measure for example.
+
+
+
+Much thanks and credit go to Robert Scheitlin for coding contribution and advice.
