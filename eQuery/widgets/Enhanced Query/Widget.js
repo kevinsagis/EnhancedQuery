@@ -151,11 +151,11 @@ define([
             percentPlaceHolder = " '%";
             percentPlaceHolder2 = "%'";
           } else {
-            percentPlaceHolder = "";
-            percentPlaceHolder2 = "";
+            percentPlaceHolder = "'";
+            percentPlaceHolder2 = "'";
           }
           var userQueryTextExpressionTxtArea = this.myareaExpression.get("value");
-          var userQueryTextExpressionTotal = this.optionFieldSel + " " + this.optionSelectedOperatorMathMenu +
+          var userQueryTextExpressionTotal = this.optionFieldSel + " " + this.optionSelectedOperatorMathMenu + " " +
             percentPlaceHolder + userQueryTextExpressionTxtArea + percentPlaceHolder2;
 
           this.myarea.set("value",  this.myarea.get("value") + userQueryTextExpressionTotal);
