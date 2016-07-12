@@ -232,7 +232,7 @@ define([
           var options = [];
           /////populate layer dropdown menu
           for (i = 0; i < layerInfoLayerList.length; i++) {
-              if (layerInfoLayerList[i].id) { //exclude layers with undefined id
+              if (layerInfoLayerList[i].id  || layerInfoLayerList[i].id === 0) { //exclude layers with undefined id
                   var option = {
                       value: i,
                       label: layerInfoLayerListName[i]
